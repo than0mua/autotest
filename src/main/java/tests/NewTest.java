@@ -12,13 +12,13 @@ public class NewTest {
 	
   @Test
   public void openMyBlog() {
-	driver.get("http://thongtinnhansu.viettel.vn/");
+	driver.get("https://thongtinnhansu.viettel.vn/");
   }
   
   @BeforeClass
   public void beforeClass() {
 	  
-	  System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\Drivers\\geckodriver.exe");
+	  System.setProperty("webdriver.gecko.driver", "/opt/geckodriver");
 	  driver = new FirefoxDriver();
 	  
   }

@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="141" started-at="2019-10-07T22:28:30 ICT" finished-at="2019-10-07T22:28:30 ICT">
+  <suite name="Default suite" duration-ms="101" started-at="2019-10-08T16:00:38 ICT" finished-at="2019-10-08T16:00:38 ICT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="141" started-at="2019-10-07T22:28:30 ICT" finished-at="2019-10-07T22:28:30 ICT">
+    <test name="Default test" duration-ms="101" started-at="2019-10-08T16:00:38 ICT" finished-at="2019-10-08T16:00:38 ICT">
       <class name="tests.NewTest">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:tests.NewTest@16022d9d]" name="beforeClass" is-config="true" duration-ms="83" started-at="2019-10-07T22:28:30 ICT" finished-at="2019-10-07T22:28:30 ICT">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:tests.NewTest@80169cf]" name="beforeClass" is-config="true" duration-ms="58" started-at="2019-10-08T16:00:38 ICT" finished-at="2019-10-08T16:00:38 ICT">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;)V]]>
@@ -20,7 +20,7 @@ at org.openqa.selenium.firefox.GeckoDriverService$Builder.usingFirefoxBinary(Gec
 at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at tests.NewTest.beforeClass(NewTest.java:22)
+at tests.NewTest.beforeClass(NewTest.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -53,7 +53,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="openMyBlog()[pri:0, instance:tests.NewTest@16022d9d]" name="openMyBlog" duration-ms="0" started-at="2019-10-07T22:28:30 ICT" finished-at="2019-10-07T22:28:30 ICT">
+        <test-method status="SKIP" signature="openMyBlog()[pri:0, instance:tests.NewTest@80169cf]" name="openMyBlog" duration-ms="0" started-at="2019-10-08T16:00:38 ICT" finished-at="2019-10-08T16:00:38 ICT">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;)V]]>
@@ -66,7 +66,7 @@ at org.openqa.selenium.firefox.GeckoDriverService$Builder.usingFirefoxBinary(Gec
 at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
 at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at tests.NewTest.beforeClass(NewTest.java:22)
+at tests.NewTest.beforeClass(NewTest.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -99,11 +99,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyBlog -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.NewTest@16022d9d]" name="afterClass" is-config="true" duration-ms="-1570462110187" started-at="2019-10-07T22:28:30 ICT" finished-at="1970-01-01T07:00:00 ICT">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.NewTest@80169cf]" name="afterClass" is-config="true" duration-ms="-1570525238865" started-at="2019-10-08T16:00:38 ICT" finished-at="1970-01-01T07:00:00 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- tests.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
