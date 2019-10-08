@@ -15,7 +15,7 @@ public class NewTest {
 	driver.get("http://thongtinnhansu.viettel.vn/");
   }
   
-  
+  @BeforeClass
   public void beforeClass() {
 	  
 	  System.setProperty("webdriver.gecko.driver", "E:\\geckodriver.exe");
