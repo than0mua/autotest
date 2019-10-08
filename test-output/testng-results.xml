@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="95" started-at="2019-10-08T21:20:38 ICT" finished-at="2019-10-08T21:20:38 ICT">
+  <suite name="Default suite" duration-ms="92" started-at="2019-10-08T21:04:01 ICT" finished-at="2019-10-08T21:04:01 ICT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="95" started-at="2019-10-08T21:20:38 ICT" finished-at="2019-10-08T21:20:38 ICT">
+    <test name="Default test" duration-ms="92" started-at="2019-10-08T21:04:01 ICT" finished-at="2019-10-08T21:04:01 ICT">
       <class name="tests.NewTest">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:tests.NewTest@80169cf]" name="beforeClass" is-config="true" duration-ms="55" started-at="2019-10-08T21:20:38 ICT" finished-at="2019-10-08T21:20:38 ICT">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:tests.NewTest@80169cf]" name="beforeClass" is-config="true" duration-ms="54" started-at="2019-10-08T21:04:01 ICT" finished-at="2019-10-08T21:04:01 ICT">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;)V]]>
@@ -53,7 +53,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="openMyBlog()[pri:0, instance:tests.NewTest@80169cf]" name="openMyBlog" duration-ms="0" started-at="2019-10-08T21:20:38 ICT" finished-at="2019-10-08T21:20:38 ICT">
+        <test-method status="SKIP" signature="openMyBlog()[pri:0, instance:tests.NewTest@80169cf]" name="openMyBlog" duration-ms="0" started-at="2019-10-08T21:04:01 ICT" finished-at="2019-10-08T21:04:01 ICT">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;)V]]>
@@ -99,7 +99,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyBlog -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.NewTest@80169cf]" name="afterClass" is-config="true" duration-ms="-1570544438174" started-at="2019-10-08T21:20:38 ICT" finished-at="1970-01-01T07:00:00 ICT">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.NewTest@80169cf]" name="afterClass" is-config="true" duration-ms="-1570543441937" started-at="2019-10-08T21:04:01 ICT" finished-at="1970-01-01T07:00:00 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
