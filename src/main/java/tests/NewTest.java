@@ -1,7 +1,7 @@
 package tests;
  
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.*;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
@@ -18,8 +18,8 @@ public class NewTest {
   @BeforeClass
   public void beforeClass() {
    
-   System.setProperty("webdriver.gecko.driver", "E:\\geckodriver.exe");
-   driver = new FirefoxDriver();
+   System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+   driver = new ChromeDriver();
    
   }
  
