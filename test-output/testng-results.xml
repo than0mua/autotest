@@ -2,25 +2,23 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100" started-at="2019-10-10T01:47:24 ICT" finished-at="2019-10-10T01:47:24 ICT">
+  <suite name="Default suite" duration-ms="67" started-at="2019-10-10T02:55:32 ICT" finished-at="2019-10-10T02:55:32 ICT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="100" started-at="2019-10-10T01:47:24 ICT" finished-at="2019-10-10T01:47:24 ICT">
+    <test name="Default test" duration-ms="67" started-at="2019-10-10T02:55:32 ICT" finished-at="2019-10-10T02:55:32 ICT">
       <class name="tests.NewTest">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:tests.NewTest@80169cf]" name="beforeClass" is-config="true" duration-ms="54" started-at="2019-10-10T01:47:24 ICT" finished-at="2019-10-10T01:47:24 ICT">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:tests.NewTest@15bfd87]" name="beforeClass" is-config="true" duration-ms="28" started-at="2019-10-10T02:55:32 ICT" finished-at="2019-10-10T02:55:32 ICT">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V]]>
+              <![CDATA[okhttp3/ConnectionPool]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at tests.NewTest.beforeClass(NewTest.java:22)
+              <![CDATA[java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.<init>(OkHttpClient.java:116)
+at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:66)
+at org.openqa.selenium.remote.HttpCommandExecutor.<clinit>(HttpCommandExecutor.java:47)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at tests.NewTest.beforeClass(NewTest.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -47,26 +45,30 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
+at java.net.URLClassLoader.findClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="openMyBlog()[pri:0, instance:tests.NewTest@80169cf]" name="openMyBlog" duration-ms="0" started-at="2019-10-10T01:47:24 ICT" finished-at="2019-10-10T01:47:24 ICT">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method status="SKIP" signature="openMyBlog()[pri:0, instance:tests.NewTest@15bfd87]" name="openMyBlog" duration-ms="0" started-at="2019-10-10T02:55:32 ICT" finished-at="2019-10-10T02:55:32 ICT">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V]]>
+              <![CDATA[okhttp3/ConnectionPool]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at tests.NewTest.beforeClass(NewTest.java:22)
+              <![CDATA[java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.<init>(OkHttpClient.java:116)
+at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:66)
+at org.openqa.selenium.remote.HttpCommandExecutor.<clinit>(HttpCommandExecutor.java:47)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at tests.NewTest.beforeClass(NewTest.java:34)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -93,13 +95,19 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
+at java.net.URLClassLoader.findClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+at java.lang.ClassLoader.loadClass(Unknown Source)
+... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyBlog -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.NewTest@80169cf]" name="afterClass" is-config="true" duration-ms="-1570646844665" started-at="2019-10-10T01:47:24 ICT" finished-at="1970-01-01T07:00:00 ICT">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.NewTest@15bfd87]" name="afterClass" is-config="true" duration-ms="-1570650932305" started-at="2019-10-10T02:55:32 ICT" finished-at="1970-01-01T07:00:00 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

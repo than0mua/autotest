@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 10 01:47:24 ICT 2019</td>
+<td>Started on:</td><td>Thu Oct 10 02:55:32 ICT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (100 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (67 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,12 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.NewTest.beforeClass()'><b>beforeClass</b><br>Test class: tests.NewTest</td>
-<td><div><pre>java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at tests.NewTest.beforeClass(NewTest.java:22)
+<td><div><pre>java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory.&lt;init&gt;(OkHttpClient.java:116)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:66)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;clinit&gt;(HttpCommandExecutor.java:47)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at tests.NewTest.beforeClass(NewTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -110,15 +108,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace956420404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace956420404'><pre>java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at tests.NewTest.beforeClass(NewTest.java:22)
+Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace715521683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace715521683'><pre>java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory.&lt;init&gt;(OkHttpClient.java:116)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:66)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;clinit&gt;(HttpCommandExecutor.java:47)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at tests.NewTest.beforeClass(NewTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -145,9 +147,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>tests.NewTest@80169cf</td></tr>
+<td>tests.NewTest@15bfd87</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -159,8 +167,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='tests.NewTest.afterClass()'><b>afterClass</b><br>Test class: tests.NewTest</td>
 <td></td>
-<td>-1570646844</td>
-<td>tests.NewTest@80169cf</td></tr>
+<td>-1570650932</td>
+<td>tests.NewTest@15bfd87</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -171,14 +179,12 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.NewTest.openMyBlog()'><b>openMyBlog</b><br>Test class: tests.NewTest</td>
-<td><div><pre>java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at tests.NewTest.beforeClass(NewTest.java:22)
+<td><div><pre>java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory.&lt;init&gt;(OkHttpClient.java:116)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:66)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;clinit&gt;(HttpCommandExecutor.java:47)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at tests.NewTest.beforeClass(NewTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -205,15 +211,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2085002312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2085002312'><pre>java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at tests.NewTest.beforeClass(NewTest.java:22)
+Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1653844940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1653844940'><pre>java.lang.NoClassDefFoundError: okhttp3/ConnectionPool
+	at org.openqa.selenium.remote.internal.OkHttpClient$Factory.&lt;init&gt;(OkHttpClient.java:116)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:66)
+	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;clinit&gt;(HttpCommandExecutor.java:47)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at tests.NewTest.beforeClass(NewTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -240,9 +250,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: okhttp3.ConnectionPool
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>tests.NewTest@80169cf</td></tr>
+<td>tests.NewTest@15bfd87</td></tr>
 </table><p>
 </body>
 </html>
